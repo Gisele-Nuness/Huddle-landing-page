@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    background-color: white;
+}
+
+body {
+    background-color: var(--Violet);
+    max-width: 1550px;
+    background-image: url('../images/bg-desktop.svg');
+    background-repeat: no-repeat;
+    margin: 50px;
+    padding: 10px;
+}
+
+main {
+    margin: 45px 40px 50px 25px;
+}
+
+
+.logo {
+    width: 214px;
+    margin-bottom: 30px;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 80px;
+}
+
+img {
+    margin-left: 42px;
+}
+.informations {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 45px;
+}
+
+.informations h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 18px;
+}
+
+.informations p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 37px;
+}
+
+.section a.btn {
+    font-size: 20px;
+    border-radius: 35px;
+    transition: 0.3s;
+    background-color: white;
+    color: var(--Violet);
+    padding: 15px 60px;
+    box-shadow: 2px 2px 2px 2px rgba(2, 2, 2, 0.3);
+}
+
+
+.section a.btn:hover {
+    color: #ffffff;
+    background-color: var(--Soft-Magenta);
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+    margin-right: 80px;
+}
+
+
+footer .social i {
+    font-size: 32px;
+    transition: 0.3s;
+}
+
+footer .social a {
+    color: white;
+    margin: 10px;
+}
+
+footer .social a:hover {
+    color: var(--Soft-Magenta);
+}
+
+@media(max-width: 1440px) {
+  body {
+    margin: auto;
+    padding: 10px;
+  }
+
+  main {
+    margin: 20px 0;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    width: 120px;
+    margin-bottom: 60px;
+  }
+
+  .section {
+    grid-template-columns: 1fr;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    margin: 0;
+  }
+
+  .informations {
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .informations h1 {
+    font-size: 20px;
+    
+  }
+
+  .informations p {
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+
+  footer {
+    margin: 0;
+    margin-top: 50px;
+    justify-content: center;
+  }
+    
+}
+
+@media(max-width: 400px) {
+    body {
+        background-image: url(../images/bg-mobile.svg);
+    }
+}
+
